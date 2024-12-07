@@ -6,7 +6,7 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:50:33 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/05 21:27:02 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/07 09:22:20 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static	void	ft_check(char c, va_list arg, int *len)
 	else if (c == 'p')
 	{
 		ft_putstr("0x", len);
-		ft_putadrs(va_arg(arg, unsigned long long), c, len);
+		ft_putadrs(va_arg(arg, unsigned long), c, len);
 	}
 	else if (c == 'i' || c == 'd')
 		ft_putnbr(va_arg(arg, int), len);
@@ -41,6 +41,8 @@ int	ft_printf(const char *str, ...)
 
 	len = 0;
 	i = 0;
+	if (write(1, "", 0) == -1)
+		return (-1);
 	va_start(arg, str);
 	while (str[i] != '\0')
 	{

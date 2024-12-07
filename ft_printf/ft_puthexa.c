@@ -6,7 +6,7 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:34:41 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/05 21:12:35 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/06 11:44:09 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	ft_puthexa(unsigned int nbr, char hex, int *len)
 		base = "0123456789ABCDEF";
 	if (nbr > 15)
 	{
-		ft_putchar((nbr / 16), len);
-		ft_putchar((nbr % 16), len);
+		ft_puthexa((nbr / 16), hex, len);
+		ft_puthexa((nbr % 16), hex, len);
 	}
 	else
 		ft_putchar(base[nbr], len);

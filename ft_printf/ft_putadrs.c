@@ -6,13 +6,13 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:44:59 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/05 21:12:14 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/06 19:21:11 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putadrs(unsigned long long nbr, char hex, int *len)
+void	ft_putadrs(unsigned long nbr, char hex, int *len)
 {
 	char	*base;
 

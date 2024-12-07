@@ -6,7 +6,7 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 19:20:36 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/05 21:12:55 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/06 19:35:07 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	ft_putstr(char *str, int *len)
 	i = 0;
 	if (!str)
 	{
-		write(1, NULL, 1);
-		*len = *len + 1;
+		*len += write(1, "(null)", 6);
 	}
 	if (str)
 	{
