@@ -1,7 +1,7 @@
 
 NAME = libftprintf.a
 C_Compiler = cc
-C_FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 Funs = 	Funs/ft_putchar.c Funs/ft_putstr.c Funs/ft_putnbr.c Funs/ft_puthexa.c Funs/ft_putunsgned.c Funs/ft_putadrs.c Funs/ft_printf.c
 		
@@ -19,10 +19,10 @@ $(NAME): $(OFuns)
 	ar rc ${NAME} $(OFuns)
 	
 Funs/%.o: Funs/%.c ft_printf.h
-	$(C_Compiler) $(C_FLAGS) -c $< -o $@
+	$(C_Compiler) $(CFLAGS) -c $< -o $@
 
 Funs_bn/%.o: Funs_bn/%.c ft_printf.h
-	$(C_Compiler) $(C_FLAGS) -c $< -o $@
+	$(C_Compiler) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OFuns) $(OFuns_bn)
