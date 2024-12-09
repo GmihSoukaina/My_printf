@@ -21,7 +21,7 @@ $(NAME): $(OFuns)
 Funs/%.o: Funs/%.c ft_printf.h
 	$(C_Compiler) $(C_FLAGS) -c $< -o $@
 
-Funs/%.o: Funs/_bn%.c ft_printf.h
+Funs_bn/%.o: Funs_bn/%.c ft_printf.h
 	$(C_Compiler) $(C_FLAGS) -c $< -o $@
 
 clean:
