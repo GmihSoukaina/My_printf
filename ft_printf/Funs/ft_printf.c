@@ -6,7 +6,7 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:50:33 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/09 15:34:49 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/11 14:19:17 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,15 +43,16 @@ int	ft_printf(const char *str, ...)
 
 	len = 0;
 	i = 0;
-	if (write(1, "", 0) == -1)
-		return (-1);
 	va_start(arg, str);
 	while (str[i] != '\0')
 	{
-		if (str[i] == '%' && str[i + 1] != '\0')
+		if (str[i] == '%')
 		{
-			i++;
-			ft_check(str[i], arg, &len);
+			if (str[i + 1] != '\0')
+			{
+				i++;
+				ft_check(str[i], arg, &len);
+			}
 		}
 		else
 			ft_putchar(str[i], &len);

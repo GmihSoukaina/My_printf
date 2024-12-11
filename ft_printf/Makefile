@@ -13,6 +13,7 @@ OFuns_bn = $(Funs_bn:.c=.o)
 all: $(NAME)
 
 bonus: $(OFuns_bn)
+	@rm -rf $(NAME)
 	ar rc ${NAME} $(OFuns_bn)
 
 $(NAME): $(OFuns)
