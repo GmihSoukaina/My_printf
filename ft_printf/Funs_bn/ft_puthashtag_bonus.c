@@ -6,13 +6,13 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 12:31:52 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/09 12:32:44 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/09 14:57:02 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_bonus.h"
+// #include "ft_printf_bonus.h"
 
-void    ft_puthashtag(char chr, int *len)
-{
-    
-}
+// void	ft_puthashtag(char chr, int *len)
+// {
+	
+// }

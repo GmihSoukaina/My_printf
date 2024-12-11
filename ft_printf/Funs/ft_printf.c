@@ -6,7 +6,7 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:50:33 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/07 09:22:20 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/09 15:34:49 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ static	void	ft_check(char c, va_list arg, int *len)
 	else if (c == 'x' || c == 'X')
 		ft_puthexa(va_arg(arg, unsigned int), c, len);
 	else if (c == '%')
+		ft_putchar(c, len);
+	else
 		ft_putchar(c, len);
 }
 
