@@ -1,6 +1,9 @@
-## The `printf` Function in C :
+
+## 📚 The `printf` Function in C :
 
 The `printf` function is an essential tool in C, used for formatted output. It belongs to the Standard Input/Output Library (`stdio.h`) and allows printing data to the console in a specified format. It is a key tool for displaying information and debugging programs.
+
+![Ajouter un titre](https://github.com/user-attachments/assets/a57b0f0d-e6e9-45dd-8dd9-9c804733fd71)
 
 ### The Format String
 
