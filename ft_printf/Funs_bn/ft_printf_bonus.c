@@ -6,7 +6,7 @@
 /*   By: sgmih <sgmih@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:50:33 by sgmih             #+#    #+#             */
-/*   Updated: 2024/12/11 14:42:19 by sgmih            ###   ########.fr       */
+/*   Updated: 2024/12/11 15:55:06 by sgmih            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static void	ft_check(char c, va_list arg, int *len, int flg)
 	unsigned int	has;
 
 	if (c == 'c')
-		ft_putchar((char)va_arg(arg, int), len);
+		ft_putchar(va_arg(arg, int), len);
 	else if (c == 's')
 		ft_putstr(va_arg(arg, char *), len);
 	else if (c == 'x' || c == 'X')
